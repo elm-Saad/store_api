@@ -1,0 +1,141 @@
+
+[
+  {
+    "name": "Smartphone X",
+    "price": 699.99,
+    "company": "TechGadget Co.",
+    "rating": 4.5
+  },
+  {
+    "name": "Laptop Pro",
+    "price": 1299.99,
+    "company": "ElectroTech Inc.",
+    "rating": 4.7
+  },
+  {
+    "name": "Gaming PC Elite",
+    "price": 1999.99,
+    "company": "GameMaster Tech",
+    "rating": 4.8
+  },
+  {
+    "name": "Wireless Bluetooth Earbuds",
+    "price": 79.99,
+    "company": "AudioTech Solutions",
+    "rating": 4.2
+  },
+  {
+    "name": "4K Ultra HD Smart TV",
+    "price": 899.99,
+    "company": "VisionTech",
+    "rating": 4.6
+  },
+  {
+    "name": "Mechanical Gaming Keyboard",
+    "price": 129.99,
+    "company": "KeyCrafters",
+    "rating": 4.4
+  },
+  {
+    "name": "High-Performance Graphics Card",
+    "price": 499.99,
+    "company": "GraphicsX",
+    "rating": 4.9
+  },
+  {
+    "name": "Smart Home Security Camera",
+    "price": 149.99,
+    "company": "SecureTech Solutions",
+    "rating": 4.5
+  },
+  {
+    "name": "Noise-Canceling Over-Ear Headphones",
+    "price": 159.99,
+    "company": "SoundWave Innovations",
+    "rating": 4.3
+  },
+  {
+    "name": "Ultra-Slim Mechanical Gaming Mouse",
+    "price": 69.99,
+    "company": "MouseMasters",
+    "rating": 4.6
+  },
+  {
+    "name": "Portable External SSD",
+    "price": 129.99,
+    "company": "StorageTech",
+    "rating": 4.7
+  },
+  {
+    "name": "Compact Digital Camera",
+    "price": 399.99,
+    "company": "CaptureLens",
+    "rating": 4.4
+  },
+  {
+    "name": "Smart Thermostat",
+    "price": 129.99,
+    "company": "EcoTech Living",
+    "rating": 4.5
+  },
+  {
+    "name": "Wireless Charging Pad",
+    "price": 29.99,
+    "company": "PowerUp Tech",
+    "rating": 4.2
+  },
+  {
+    "name": "High-Speed Wi-Fi Router",
+    "price": 89.99,
+    "company": "ConnectX Networks",
+    "rating": 4.6
+  },
+  {
+    "name": "Fitness Tracker Bracelet",
+    "price": 49.99,
+    "company": "HealthSync",
+    "rating": 4.3
+  },
+  {
+    "name": "External Webcam with Microphone",
+    "price": 79.99,
+    "company": "VideoTech Solutions",
+    "rating": 4.4
+  },
+  {
+    "name": "Smart Refrigerator",
+    "price": 1499.99,
+    "company": "SmartHome Appliances",
+    "rating": 4.7
+  },
+  {
+    "name": "Solar-Powered Phone Charger",
+    "price": 39.99,
+    "company": "GreenPower Innovations",
+    "rating": 4.2
+  },
+  {
+    "name": "Curved Ultrawide Gaming Monitor",
+    "price": 599.99,
+    "company": "Panoramic Displays",
+    "rating": 4.8
+  },
+  {
+    "name": "Digital Drawing Tablet",
+    "price": 199.99,
+    "company": "ArtTech Creations",
+    "rating": 4.6
+  },
+  {
+    "name": "Compact Photo Printer",
+    "price": 119.99,
+    "company": "PrintCrafters",
+    "rating": 4.3
+  },
+  {
+    "name": "Solar-Powered Bluetooth Speaker",
+    "price": 59.99,
+    "company": "SunSound Technologies",
+    "rating": 4.5
+  }
+]
