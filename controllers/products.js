@@ -13,7 +13,7 @@ const getProducts = async (req,res)=>{
     // search Query Params filtering
     //?name=.&....
     
-    const {featured,company,name,sort,fields,numericFilters} = req.query
+    const {featured,company,name,sort,select,numericFilters} = req.query
     const queryObject = {}
 
     if(featured){
@@ -73,16 +73,18 @@ const getProducts = async (req,res)=>{
     }
 
     // select options => return just the selected props
-    if(fields){
-        const selectedList = fields.split(',').join(' ')
+    if(select){
+        const selectedList = select.split(',').join(' ')
         result = result.select(selectedList)
     }
 
     // Skip & Limit => pagination 
 
-    const page = Number(req.query.page) || 1
-    const limit = Number(req.query.limit) || 10
-
+    let page = Number(req.query.page) || 1
+    let limit = Number(req.query.limit) || 8
+    if(page>3 || page<1){
+        page=1
+    } 
     /**
      * pagination logic => skip number of items base on the page requested
      */

@@ -287,22 +287,22 @@
                    <section class="mt-4">
                     <div>
                         <div>
-                            <h2 class="text-xl font-semibold">Numeric Filters</h2>
+                            <h2 class="text-xl font-semibold">Sort</h2>
                             <p class="my-4">
-                                filter on a specific numerical condition (<, <=, =, > or >=).
-                                Available numerical fields:<br/>
-                                price,rating
+                                The sort parameter allows you to specify the field by which the results should be sorted.<br />
+                                You can also include a hyphen (-) before the field name to indicate descending order.<br />
+                                The results will be sorted in ascending order by default.
                             </p>
                         </div>
                         <div class="my-6 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
                             <kbd class="kbd bg-info text-white">GET</kbd>
-                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?numericFilters=price>100</p>
+                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?sort=name, -price</p>
                         </div>
                     </div>
                     <div>
                         <div class="mockup-browser border bg-base-300">
                             <div class="mockup-browser-toolbar">
-                            <div class="input">{{URL}}?numericFilters=price>100</div>
+                            <div class="input">{{URL}}?sort=name, -price</div>
                             </div>
                             <div class="flex justify-start px-4 py-4 bg-base-200">
                                 <div class="">
@@ -310,15 +310,92 @@
                                     <pre data-prefix="> "><code> "AllProducts":[</code></pre> 
                                     <pre data-prefix="> "><code>  {</code></pre> 
                                     <pre data-prefix="> "><code>   "featured":<code class="text-success">false,</code></code></pre> 
-                                    <pre data-prefix="> "><code>   "rating":<code class="text-success">4.8,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "rating":<code class="text-success">4.3,</code></code></pre> 
                                     <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
-                                    <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
-                                    <pre data-prefix="> "><code>   "name":<code class="text-success">"Laptop Pro X",</code></code></pre> 
-                                    <pre data-prefix="> "><code>   "price":<code class="text-white"><kbd class="kbd bg-info">1899.99,</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eaed",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "name":<code class="text-white"><kbd class="kbd kbd-sm bg-info">"AI-Powered Drone",</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code>   "price":<code class="text-white"><kbd class="kbd kbd-sm bg-info">499.99,</kbd></code></code></pre> 
                                     <pre data-prefix="> "><code>   "company":<code class="text-success">"InnoTech",</code></code></pre> 
                                     <pre data-prefix="> "><code> },</code></pre> 
                                     <pre data-prefix="> "><code> // Additional products...</code></pre> 
                                     <pre data-prefix="> "><code>]</code></pre> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+
+                    <!--Select Options-->
+                   <section class="mt-4">
+                    <div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Select Options</h2>
+                            <p class="my-4">
+                                Return only the selected properties of the products.
+                            </p>
+                        </div>
+                        <div class="my-6 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
+                            <kbd class="kbd bg-info text-white">GET</kbd>
+                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?select=properties name</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mockup-browser border bg-base-300">
+                            <div class="mockup-browser-toolbar">
+                            <div class="input">{{URL}}?select=name, price</div>
+                            </div>
+                            <div class="flex justify-start px-4 py-4 bg-base-200">
+                                <div class="">
+                                    <pre data-prefix="> "><code>{</code></pre> 
+                                    <pre data-prefix="> "><code> "AllProducts":[</code></pre> 
+                                    <pre data-prefix="> "><code>  {</code></pre> 
+                                    <pre data-prefix="> "><code>   "name":<code class="text-white"><kbd class="kbd kbd-sm bg-info">"AI-Powered Drone",</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code>   "price":<code class="text-white"><kbd class="kbd kbd-sm bg-info">499.99,</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code> },</code></pre> 
+                                    <pre data-prefix="> "><code> // Additional products...</code></pre> 
+                                    <pre data-prefix="> "><code>]</code></pre> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+
+                     <!--Select Options-->
+                   <section class="mt-4">
+                    <div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Pagination</h2>
+                            <p class="my-4">
+                                Control the number of items per page and navigate through the result pages.
+                            </p>
+                        </div>
+                        <div class="my-6 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
+                            <kbd class="kbd bg-info text-white">GET</kbd>
+                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?page=2</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mockup-browser border bg-base-300">
+                            <div class="mockup-browser-toolbar">
+                            <div class="input">{{URL}}?page=2</div>
+                            </div>
+                            <div class="flex justify-start px-4 py-4 bg-base-200">
+                                <div class="">
+                                    <pre data-prefix="> "><code>{</code></pre> 
+                                    <pre data-prefix="> "><code> "AllProducts":[</code></pre> 
+                                    <pre data-prefix="> "><code>  {</code></pre> 
+                                    <pre data-prefix="> "><code>   "featured":<code class="text-white">true,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "rating":<code class="text-success">4.7,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "name":<code class="text-success">"Smart Refrigerator",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "price":<code class="text-success">1499.99,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "company":<code class="text-success">"SmartHome Appliances",</code></code></pre> 
+                                    <pre data-prefix="> "><code> },</code></pre> 
+                                    <pre data-prefix="> "><code> // Additional products...</code></pre> 
+                                    <pre data-prefix="> "><code>]</code></pre> 
+            
+            
                                 </div>
                             </div>
                         </div>
