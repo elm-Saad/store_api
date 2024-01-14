@@ -117,9 +117,9 @@
                 <!---->
                 <div class="my-4 p-2 md:p-8 border-2 rounded-sm">
                     <h1 class="font-semibold text-2xl text-base-400 m-2 ml-0">Examples</h1>
-                    <!-- get /products?featured=true-->
                     <p class="my-8 text-center text-md font-semibold text-black">{{URL}} <kbd class="kbd kbd-sm bg-info text-white">shortcut for</kbd> https://________/api/v1/products</p>
-                   <section>
+                    <!-- get /products?featured=true-->
+                   <section class="">
                         <div>
                             <div>
                                 <h2 class="text-xl font-semibold">Featured</h2>
@@ -160,7 +160,170 @@
                             </div>
                         </div>
                    </section>
-                    
+
+                    <!--get byCompany-->
+                   <section class="mt-4">
+                    <div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Company</h2>
+                            <p class="my-4">
+                                Filter products by the name of the company.<br/>
+                            </p>
+                        </div>
+                        <div class="my-6 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
+                            <kbd class="kbd bg-info text-white">GET</kbd>
+                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?company=company name</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mockup-browser border bg-base-300">
+                            <div class="mockup-browser-toolbar">
+                            <div class="input">{{URL}}?company=TechGuru</div>
+                            </div>
+                            <div class="flex justify-start px-4 py-4 bg-base-200">
+                                <div class="">
+                                    <pre data-prefix="> "><code>{</code></pre> 
+                                    <pre data-prefix="> "><code> "AllProducts":[</code></pre> 
+                                    <pre data-prefix="> "><code>  {</code></pre> 
+                                    <pre data-prefix="> "><code>   "featured":<code class="text-success">false,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "rating":<code class="text-success">4.7,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "name":<code class="text-success">"Smart TV",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "price":<code class="text-success">899.99,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "company":<code class="text-white"><kbd class="kbd bg-info">"TechGuru"</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code> },</code></pre> 
+                                    <pre data-prefix="> "><code> // Additional products...</code></pre> 
+                                    <pre data-prefix="> "><code>]</code></pre> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+
+                    <!--get byName-->
+                   <section class="mt-4">
+                    <div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Product Name</h2>
+                            <p class="my-4">
+                                Filter products by the name.<br/>
+                            </p>
+                        </div>
+                        <div class="my-6 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
+                            <kbd class="kbd bg-info text-white">GET</kbd>
+                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?company=product name</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mockup-browser border bg-base-300">
+                            <div class="mockup-browser-toolbar">
+                            <div class="input">{{URL}}?name=Laptop Pro X</div>
+                            </div>
+                            <div class="flex justify-start px-4 py-4 bg-base-200">
+                                <div class="">
+                                    <pre data-prefix="> "><code>{</code></pre> 
+                                    <pre data-prefix="> "><code> "AllProducts":[</code></pre> 
+                                    <pre data-prefix="> "><code>  {</code></pre> 
+                                    <pre data-prefix="> "><code>   "featured":<code class="text-success">false,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "rating":<code class="text-success">4.8,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "name":<code class="text-white"><kbd class="kbd bg-info">"Laptop Pro X",</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code>   "price":<code class="text-success">1899.99,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "company":<code class="text-success">"InnoTech",</code></code></pre> 
+                                    <pre data-prefix="> "><code> },</code></pre> 
+                                    <pre data-prefix="> "><code> // Additional products...</code></pre> 
+                                    <pre data-prefix="> "><code>]</code></pre> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+
+                    <!--Numeric Filters-->
+                   <section class="mt-4">
+                    <div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Numeric Filters</h2>
+                            <p class="my-4">
+                                filter on a specific numerical condition (<, <=, =, > or >=).
+                                Available numerical fields:<br/>
+                                price,rating
+                            </p>
+                        </div>
+                        <div class="my-6 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
+                            <kbd class="kbd bg-info text-white">GET</kbd>
+                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?numericFilters=price>100</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mockup-browser border bg-base-300">
+                            <div class="mockup-browser-toolbar">
+                            <div class="input">{{URL}}?numericFilters=price>100</div>
+                            </div>
+                            <div class="flex justify-start px-4 py-4 bg-base-200">
+                                <div class="">
+                                    <pre data-prefix="> "><code>{</code></pre> 
+                                    <pre data-prefix="> "><code> "AllProducts":[</code></pre> 
+                                    <pre data-prefix="> "><code>  {</code></pre> 
+                                    <pre data-prefix="> "><code>   "featured":<code class="text-success">false,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "rating":<code class="text-success">4.8,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "name":<code class="text-success">"Laptop Pro X",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "price":<code class="text-white"><kbd class="kbd bg-info">1899.99,</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code>   "company":<code class="text-success">"InnoTech",</code></code></pre> 
+                                    <pre data-prefix="> "><code> },</code></pre> 
+                                    <pre data-prefix="> "><code> // Additional products...</code></pre> 
+                                    <pre data-prefix="> "><code>]</code></pre> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+
+                    <!--Sorting-->
+                   <section class="mt-4">
+                    <div>
+                        <div>
+                            <h2 class="text-xl font-semibold">Numeric Filters</h2>
+                            <p class="my-4">
+                                filter on a specific numerical condition (<, <=, =, > or >=).
+                                Available numerical fields:<br/>
+                                price,rating
+                            </p>
+                        </div>
+                        <div class="my-6 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
+                            <kbd class="kbd bg-info text-white">GET</kbd>
+                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?numericFilters=price>100</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mockup-browser border bg-base-300">
+                            <div class="mockup-browser-toolbar">
+                            <div class="input">{{URL}}?numericFilters=price>100</div>
+                            </div>
+                            <div class="flex justify-start px-4 py-4 bg-base-200">
+                                <div class="">
+                                    <pre data-prefix="> "><code>{</code></pre> 
+                                    <pre data-prefix="> "><code> "AllProducts":[</code></pre> 
+                                    <pre data-prefix="> "><code>  {</code></pre> 
+                                    <pre data-prefix="> "><code>   "featured":<code class="text-success">false,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "rating":<code class="text-success">4.8,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "name":<code class="text-success">"Laptop Pro X",</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "price":<code class="text-white"><kbd class="kbd bg-info">1899.99,</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code>   "company":<code class="text-success">"InnoTech",</code></code></pre> 
+                                    <pre data-prefix="> "><code> },</code></pre> 
+                                    <pre data-prefix="> "><code> // Additional products...</code></pre> 
+                                    <pre data-prefix="> "><code>]</code></pre> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </section>
                 </div>
             </section>
         </section>
