@@ -29,7 +29,7 @@
             </div>
             <div class="max-w-[600px] m-auto my-12 text-center text-lg">
                 <p>
-                    This API is built on top of <kbd class="kbd kbd-sm bg-info text-white"bg-info text-white>Store api</kbd>API.
+                    <kbd class="kbd bg-info text-white"bg-info text-white>Store api</kbd>API.
                     It enables developers to access data programmatically using a REST API.
                     This documentation describes how to request data from the API and how to interpret the response.
                 </p>
@@ -143,7 +143,7 @@
                                         <pre data-prefix="> "><code>{</code></pre> 
                                         <pre data-prefix="> "><code> "AllProducts":[</code></pre> 
                                         <pre data-prefix="> "><code>  {</code></pre> 
-                                        <pre data-prefix="> "><code>   "featured":<code class="text-white"><kbd class="kbd bg-info">true</kbd>,</code></code></pre> 
+                                        <pre data-prefix="> "><code>   "featured":<code class="text-white"><kbd class="kbd kbd-sm bg-info">true</kbd>,</code></code></pre> 
                                         <pre data-prefix="> "><code>   "rating":<code class="text-success">4.7,</code></code></pre> 
                                         <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
                                         <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
@@ -191,7 +191,7 @@
                                     <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
                                     <pre data-prefix="> "><code>   "name":<code class="text-success">"Smart TV",</code></code></pre> 
                                     <pre data-prefix="> "><code>   "price":<code class="text-success">899.99,</code></code></pre> 
-                                    <pre data-prefix="> "><code>   "company":<code class="text-white"><kbd class="kbd bg-info">"TechGuru"</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code>   "company":<code class="text-white"><kbd class="kbd kbd-sm bg-info">"TechGuru"</kbd></code></code></pre> 
                                     <pre data-prefix="> "><code> },</code></pre> 
                                     <pre data-prefix="> "><code> // Additional products...</code></pre> 
                                     <pre data-prefix="> "><code>]</code></pre> 
@@ -229,7 +229,7 @@
                                     <pre data-prefix="> "><code>   "rating":<code class="text-success">4.8,</code></code></pre> 
                                     <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
                                     <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
-                                    <pre data-prefix="> "><code>   "name":<code class="text-white"><kbd class="kbd bg-info">"Laptop Pro X",</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code>   "name":<code class="text-white"><kbd class="kbd kbd-sm bg-info">"Laptop Pro X",</kbd></code></code></pre> 
                                     <pre data-prefix="> "><code>   "price":<code class="text-success">1899.99,</code></code></pre> 
                                     <pre data-prefix="> "><code>   "company":<code class="text-success">"InnoTech",</code></code></pre> 
                                     <pre data-prefix="> "><code> },</code></pre> 
@@ -272,7 +272,7 @@
                                     <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
                                     <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
                                     <pre data-prefix="> "><code>   "name":<code class="text-success">"Laptop Pro X",</code></code></pre> 
-                                    <pre data-prefix="> "><code>   "price":<code class="text-white"><kbd class="kbd bg-info">1899.99,</kbd></code></code></pre> 
+                                    <pre data-prefix="> "><code>   "price":<code class="text-white"><kbd class="kbd kbd-sm bg-info">1899.99,</kbd></code></code></pre> 
                                     <pre data-prefix="> "><code>   "company":<code class="text-success">"InnoTech",</code></code></pre> 
                                     <pre data-prefix="> "><code> },</code></pre> 
                                     <pre data-prefix="> "><code> // Additional products...</code></pre> 
@@ -371,7 +371,7 @@
                         </div>
                         <div class="my-6 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
                             <kbd class="kbd bg-info text-white">GET</kbd>
-                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?page=2</p>
+                            <p class="text-blue-500 text-lg underline underline-offset-2">{{URL}}?page=page number</p>
                         </div>
                     </div>
                     <div>
@@ -384,7 +384,7 @@
                                     <pre data-prefix="> "><code>{</code></pre> 
                                     <pre data-prefix="> "><code> "AllProducts":[</code></pre> 
                                     <pre data-prefix="> "><code>  {</code></pre> 
-                                    <pre data-prefix="> "><code>   "featured":<code class="text-white">true,</code></code></pre> 
+                                    <pre data-prefix="> "><code>   "featured":<code class="text-success">true,</code></code></pre> 
                                     <pre data-prefix="> "><code>   "rating":<code class="text-success">4.7,</code></code></pre> 
                                     <pre data-prefix="> "><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
                                     <pre data-prefix="> "><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
@@ -403,7 +403,13 @@
                     </section>
                 </div>
             </section>
+            <footer class="mt-16 footer footer-center p-4 bg-base-300 text-base-content">
+                <aside>
+                  <p>Copyright © 2024 - All right reserved by <a href="https://twitter.com/elm_saad" target="_blank">elm Saad</a> </p> 
+                </aside>
+              </footer>
         </section>
+        
     </main>
 </body>
 </html>
