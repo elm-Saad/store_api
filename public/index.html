@@ -11,7 +11,7 @@
 </head>
 <body>
     <main class="w-full h-full flex items-center justify-center">
-        <section class="min-h-screen w-full max-w-[1400px] bg-primary-content">
+        <section class="min-h-screen w-full max-w-[1400px] bg-neutral-content">
             <div class="navbar bg-base-300">
                 <div class="flex-none">
                   <button class="btn btn-square btn-ghost">
@@ -34,16 +34,17 @@
                     This documentation describes how to request data from the API and how to interpret the response.
                 </p>
             </div>
-            <section>
-                <div class="p-2 md:p-4 border-2 rounded-sm m-4">
+            <section class="px-4 md:px-16">
+                <!---->
+                <div class="my-4 p-2 md:p-8 border-2 rounded-sm">
                     <h1 class="font-semibold text-2xl text-base-400 m-2 ml-0">Items</h1>
-                    <div class="my-4 flex items-center gap-2">
+                    <div class="my-4 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
                         <kbd class="kbd bg-info text-white">GET</kbd>
-                        <p class="text-blue-400 text-lg underline underline-offset-2">https://___________/api/v1/products</p>
+                        <p class="text-blue-500 text-lg underline underline-offset-2">https://___________/api/v1/products/all</p>
                     </div>
                     <div class="mockup-code">
                         <pre data-prefix="."><code>{</code></pre> 
-                        <pre data-prefix="." class="text-warning"><code> "AllProducts":[</code></pre> 
+                        <pre data-prefix="."><code> "AllProducts":[</code></pre> 
                         <pre data-prefix="."><code>  {</code></pre> 
                         <pre data-prefix="."><code>   "featured":<code class="text-success">false,</code></code></pre> 
                         <pre data-prefix="."><code>   "rating":<code class="text-success">4.7,</code></code></pre> 
@@ -52,10 +53,90 @@
                         <pre data-prefix="."><code>   "name":<code class="text-success">"Smart Refrigerator",</code></code></pre> 
                         <pre data-prefix="."><code>   "price":<code class="text-success">1499.99,</code></code></pre> 
                         <pre data-prefix="."><code>   "company":<code class="text-success">"SmartHome Appliances",</code></code></pre> 
-                        <pre data-prefix="."><code> },.....]</code></pre> 
+                        <pre data-prefix="."><code> },</code></pre> 
+                        <pre data-prefix="."><code> // Additional products...</code></pre> 
+                        <pre data-prefix="."><code>]</code></pre> 
+
+
                       </div>
                 </div>
-
+                <!---->
+                <div class="my-4 p-2 md:p-8 border-2 rounded-sm">
+                    <h1 class="font-semibold text-2xl text-base-400 m-2 ml-0">Search</h1>
+                    <div>
+                        <p class="text-lg text-black">
+                            The search functionality allows users to query the product database with various parameters to find relevant items.
+                            This endpoint supports filtering, sorting, and pagination.
+                        </p>
+                        <div class="my-4 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
+                            <kbd class="kbd bg-info text-white">GET</kbd>
+                            <p class="text-blue-500 text-lg underline underline-offset-2">https://___________/api/v1/products/?query=...</p>
+                        </div>
+                    </div>
+                    <div class="text-lg text-gray-400">
+                        <span>Common query parameters: </span>
+                    </div>
+                    <div class="overflow-x-auto mx-0 md:mx-4 my-8">
+                        <table class="table">
+                          <!-- head -->
+                          <thead>
+                            <tr>
+                              <th class="text-lg">Parameter</th>
+                              <th class="text-lg">Description</th>
+                              <th class="text-lg">Type</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- row 1 -->
+                            <tr>
+                              <td><span class="bg-blue-200 text-blue-500 p-1">query=</span></td>
+                              <td>full-text query</td>
+                              <td>string</td>
+                            </tr>
+                            <!-- row 2 -->
+                            <tr>
+                                <td><span class="bg-blue-200 text-blue-500 p-1">numericFilters=</span></td>
+                              <td>
+                                <p>
+                                    filter on a specific numerical condition (<kbd class="kbd kbd-sm"><</kbd>
+                                    , <kbd class="kbd kbd-sm"><=</kbd>, <kbd class="kbd kbd-sm">=</kbd>, <kbd class="kbd kbd-sm">></kbd>or <kbd class="kbd kbd-sm">>=</kbd>).
+                                </p>
+                              </td>
+                              <td>string</td>
+                            </tr>
+                            <!-- row 3 -->
+                            <tr>
+                              <td><span class="bg-blue-200 text-blue-500 p-1">page=</span></td>
+                              <td>page number</td>
+                              <td>Integer</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!---->
+                <div class="my-4 p-2 md:p-8 border-2 rounded-sm">
+                    <h1 class="font-semibold text-2xl text-base-400 m-2 ml-0">Examples</h1>
+                    <div class="my-4 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
+                        <kbd class="kbd bg-info text-white">GET</kbd>
+                        <p class="text-blue-500 text-lg underline underline-offset-2">https://___________/api/v1/products/all</p>
+                    </div>
+                    <div class="mockup-code">
+                        <pre data-prefix="."><code>{</code></pre> 
+                        <pre data-prefix="."><code> "AllProducts":[</code></pre> 
+                        <pre data-prefix="."><code>  {</code></pre> 
+                        <pre data-prefix="."><code>   "featured":<code class="text-success">false,</code></code></pre> 
+                        <pre data-prefix="."><code>   "rating":<code class="text-success">4.7,</code></code></pre> 
+                        <pre data-prefix="."><code>   "createdAT":<code class="text-success">"2024-01-14T07:55:29.287Z",</code></code></pre> 
+                        <pre data-prefix="."><code>   "_id":<code class="text-success">"65a39372e4e5430fbce4eae3",</code></code></pre> 
+                        <pre data-prefix="."><code>   "name":<code class="text-success">"Smart Refrigerator",</code></code></pre> 
+                        <pre data-prefix="."><code>   "price":<code class="text-success">1499.99,</code></code></pre> 
+                        <pre data-prefix="."><code>   "company":<code class="text-success">"SmartHome Appliances",</code></code></pre> 
+                        <pre data-prefix="."><code> },</code></pre> 
+                        <pre data-prefix="."><code> // Additional products...</code></pre> 
+                        <pre data-prefix="."><code>]</code></pre> 
+                    </div>
+                </div>
             </section>
         </section>
     </main>
