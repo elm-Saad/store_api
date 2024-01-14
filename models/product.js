@@ -24,7 +24,7 @@ const productSchema = new mongoose.Schema({
     company:{
         type:String,
         enum:{
-            values:['liddy','marcos','ikea','caressa'],
+            values:['SmartHome Appliances','TechGuru','InnoTech','GadgetMasters'],
             message:'{VALUE} is not supported',//handle error 
         },
     },
@@ -33,3 +33,33 @@ const productSchema = new mongoose.Schema({
 
 
 module.exports = mongoose.model('Product',productSchema)
+
+/**
+ * [
+  {
+    "companyName": "SmartHome Appliances",
+    "location": "Silicon Valley, USA",
+    "foundedYear": 2010,
+    "CEO": "John Techerson"
+  },
+  {
+    "companyName": "TechGuru",
+    "location": "San Francisco, USA",
+    "foundedYear": 2008,
+    "CEO": "Laura Innovista"
+  },
+  {
+    "companyName": "InnoTech",
+    "location": "Seoul, South Korea",
+    "foundedYear": 2012,
+    "CEO": "Kim Innovator"
+  },
+  {
+    "companyName": "GadgetMasters",
+    "location": "Tokyo, Japan",
+    "foundedYear": 2015,
+    "CEO": "Yuki Techimoto"
+  }
+]
+
+ */
