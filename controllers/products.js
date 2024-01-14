@@ -25,9 +25,6 @@ const getProducts = async (req,res)=>{
     }
 
     if(name){
-        /**
-         * not locking for the exact name but for the pattern of the name and option i => case insensitive
-         */
         queryObject.name = {$regex: name, $options:'i'}
     }
 
