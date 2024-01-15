@@ -27,9 +27,9 @@
                   
                 </div>
             </div>
-            <div class="max-w-[600px] m-auto my-12 text-center text-lg">
-                <p>
-                    <kbd class="kbd bg-info text-white mr-2"bg-info text-white>Store api</kbd>API.
+            <div class="max-w-[300px] md:max-w-[600px] m-auto my-12 text-center text-lg">
+                <p class="mx-4 md:m-0 text-black">
+                    <kbd class="kbd bg-info text-white mr-2">Store api</kbd>API.
                     It enables developers to access data programmatically using a REST API.
                     This documentation describes how to request data from the API and how to interpret the response.
                 </p>
@@ -37,10 +37,10 @@
             <section class="px-4 md:px-16">
                 <!---->
                 <div class="my-4 p-2 md:p-8 border-2 rounded-sm">
-                    <h1 class="font-semibold text-2xl text-base-400 m-2 ml-0">Items</h1>
+                    <h1 class="font-semibold text-2xl text-black m-2 ml-0">Items</h1>
                     <div class="my-4 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
                         <kbd class="kbd bg-info text-white">GET</kbd>
-                        <p class="text-blue-500 text-lg underline underline-offset-2">https://elm-store-api.onrender.com/api/v1/products/all</p>
+                        <p class="text-blue-500 text-lg underline underline-offset-2"><span class="hidden sm:block">https://elm-store-api.onrender.com/</span>api/v1/products/all</p>
                     </div>
                     <div class="mockup-code">
                         <pre data-prefix="."><code>{</code></pre> 
@@ -62,7 +62,7 @@
                 </div>
                 <!---->
                 <div class="my-4 p-2 md:p-8 border-2 rounded-sm">
-                    <h1 class="font-semibold text-2xl text-base-400 m-2 ml-0">Search</h1>
+                    <h1 class="font-semibold text-2xl text-black m-2 ml-0">Search</h1>
                     <div>
                         <p class="text-lg text-black">
                             The search functionality allows users to query the product database with various parameters to find relevant items.
@@ -70,10 +70,10 @@
                         </p>
                         <div class="my-4 flex items-center gap-2 bg-blue-200 rounded-md w-fit">
                             <kbd class="kbd bg-info text-white">GET</kbd>
-                            <p class="text-blue-500 text-lg underline underline-offset-2">https://elm-store-api.onrender.com/api/v1/products/?query=...</p>
+                            <p class="text-blue-500 text-lg underline underline-offset-2"><span class="hidden sm:block">https://elm-store-api.onrender.com/</span>api/v1/products/?query=...</p>
                         </div>
                     </div>
-                    <div class="text-lg text-gray-400">
+                    <div class="text-lg text-gray-700">
                         <span>Common query parameters: </span>
                     </div>
                     <div class="overflow-x-auto mx-0 md:mx-4 my-8">
@@ -81,34 +81,34 @@
                           <!-- head -->
                           <thead>
                             <tr>
-                              <th class="text-lg">Parameter</th>
-                              <th class="text-lg">Description</th>
-                              <th class="text-lg">Type</th>
+                              <th class="text-lg text-gray-900">Parameter</th>
+                              <th class="text-lg text-gray-900">Description</th>
+                              <th class="text-lg text-gray-900">Type</th>
                             </tr>
                           </thead>
                           <tbody>
                             <!-- row 1 -->
                             <tr>
                               <td><span class="bg-blue-200 text-blue-500 p-1">query=</span></td>
-                              <td>full-text query</td>
-                              <td>string</td>
+                              <td class="text-black">full-text query</td>
+                              <td class="text-black">string</td>
                             </tr>
                             <!-- row 2 -->
                             <tr>
                                 <td><span class="bg-blue-200 text-blue-500 p-1">numericFilters=</span></td>
                               <td>
-                                <p>
+                                <p class="text-black">
                                     filter on a specific numerical condition (<kbd class="kbd kbd-sm"><</kbd>
                                     , <kbd class="kbd kbd-sm"><=</kbd>, <kbd class="kbd kbd-sm">=</kbd>, <kbd class="kbd kbd-sm">></kbd>or <kbd class="kbd kbd-sm">>=</kbd>).
                                 </p>
                               </td>
-                              <td>string</td>
+                              <td class="text-black">string</td>
                             </tr>
                             <!-- row 3 -->
                             <tr>
                               <td><span class="bg-blue-200 text-blue-500 p-1">page=</span></td>
-                              <td>page number</td>
-                              <td>Integer</td>
+                              <td class="text-black">page number</td>
+                              <td class="text-black">Integer</td>
                             </tr>
                           </tbody>
                         </table>
@@ -116,14 +116,14 @@
                 </div>
                 <!---->
                 <div class="my-4 p-2 md:p-8 border-2 rounded-sm">
-                    <h1 class="font-semibold text-2xl text-base-400 m-2 ml-0">Examples</h1>
+                    <h1 class="font-semibold text-2xl text-black m-2 ml-0">Examples</h1>
                     <p class="my-8 text-center text-md font-semibold text-black">{{URL}} <kbd class="kbd kbd-sm bg-info text-white">shortcut for</kbd><br/>https://elm-store-api.onrender.com/api/v1/products</p>
                     <!-- get /products?featured=true-->
                    <section class="">
                         <div>
                             <div>
-                                <h2 class="text-xl font-semibold">Featured</h2>
-                                <p class="my-4">
+                                <h2 class="text-xl text-black font-semibold">Featured</h2>
+                                <p class="my-4 text-black">
                                     Filter products based on their featured status.<br/>
                                     true to include only featured products, false to exclude them.
                                 </p>
@@ -165,8 +165,8 @@
                    <section class="mt-4">
                     <div>
                         <div>
-                            <h2 class="text-xl font-semibold">Company</h2>
-                            <p class="my-4">
+                            <h2 class="text-xl font-semibold text-black">Company</h2>
+                            <p class="my-4 text-black">
                                 Filter products by the name of the company.<br/>
                             </p>
                         </div>
@@ -205,8 +205,8 @@
                    <section class="mt-4">
                     <div>
                         <div>
-                            <h2 class="text-xl font-semibold">Product Name</h2>
-                            <p class="my-4">
+                            <h2 class="text-xl font-semibold text-black">Product Name</h2>
+                            <p class="my-4 text-black">
                                 Filter products by the name.<br/>
                             </p>
                         </div>
@@ -245,8 +245,8 @@
                    <section class="mt-4">
                     <div>
                         <div>
-                            <h2 class="text-xl font-semibold">Numeric Filters</h2>
-                            <p class="my-4">
+                            <h2 class="text-xl font-semibold text-black">Numeric Filters</h2>
+                            <p class="my-4 text-black">
                                 filter on a specific numerical condition (<, <=, =, > or >=).
                                 Available numerical fields:<br/>
                                 price,rating
@@ -287,8 +287,8 @@
                    <section class="mt-4">
                     <div>
                         <div>
-                            <h2 class="text-xl font-semibold">Sort</h2>
-                            <p class="my-4">
+                            <h2 class="text-xl font-semibold text-black">Sort</h2>
+                            <p class="my-4 text-black">
                                 The sort parameter allows you to specify the field by which the results should be sorted.<br />
                                 You can also include a hyphen (-) before the field name to indicate descending order.<br />
                                 The results will be sorted in ascending order by default.
@@ -329,8 +329,8 @@
                    <section class="mt-4">
                     <div>
                         <div>
-                            <h2 class="text-xl font-semibold">Select Options</h2>
-                            <p class="my-4">
+                            <h2 class="text-xl font-semibold text-black">Select Options</h2>
+                            <p class="my-4 text-black">
                                 Return only the selected properties of the products.
                             </p>
                         </div>
@@ -364,8 +364,8 @@
                    <section class="mt-4">
                     <div>
                         <div>
-                            <h2 class="text-xl font-semibold">Pagination</h2>
-                            <p class="my-4">
+                            <h2 class="text-xl font-semibold text-black">Pagination</h2>
+                            <p class="my-4 text-black">
                                 Control the number of items per page and navigate through the result pages.
                             </p>
                         </div>

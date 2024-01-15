@@ -1,143 +1,167 @@
 [
   {
+    "featured": true,
     "name": "Smart Refrigerator",
     "price": 1499.99,
     "company": "SmartHome Appliances",
     "rating": 4.7
   },
   {
+    "featured": true,
     "name": "Smart TV",
     "price": 899.99,
     "company": "TechGuru",
     "rating": 4.5
   },
   {
+    "featured": false,
     "name": "Laptop Pro X",
     "price": 1899.99,
     "company": "InnoTech",
     "rating": 4.8
   },
   {
+    "featured": false,
     "name": "Wireless Earbuds",
     "price": 129.99,
     "company": "GadgetMasters",
     "rating": 4.6
   },
   {
+    "featured": false,
     "name": "Smart Home Security System",
     "price": 599.99,
     "company": "SmartHome Appliances",
     "rating": 4.9
   },
   {
+    "featured": true,
     "name": "Augmented Reality Glasses",
     "price": 1299.99,
     "company": "TechGuru",
     "rating": 4.2
   },
   {
+    "featured": false,
     "name": "Ultra-Thin Laptop",
     "price": 1499.99,
     "company": "InnoTech",
     "rating": 4.7
   },
   {
+    "featured": true,
     "name": "Fitness Tracker",
     "price": 79.99,
     "company": "GadgetMasters",
     "rating": 4.4
   },
   {
+    "featured": true,
     "name": "Smart Thermostat",
     "price": 199.99,
     "company": "SmartHome Appliances",
     "rating": 4.6
   },
   {
+    "featured": true,
     "name": "VR Gaming Headset",
     "price": 599.99,
     "company": "TechGuru",
     "rating": 4.8
   },
   {
+    "featured": true,
     "name": "AI-Powered Drone",
     "price": 499.99,
     "company": "InnoTech",
     "rating": 4.3
   },
   {
+    "featured": false,
     "name": "Bluetooth Speaker",
     "price": 69.99,
     "company": "GadgetMasters",
     "rating": 4.5
   },
   {
+    "featured": false,
     "name": "Smart Doorbell",
     "price": 149.99,
     "company": "SmartHome Appliances",
     "rating": 4.7
   },
   {
+    "featured": true,
     "name": "Gaming Console",
     "price": 399.99,
     "company": "TechGuru",
     "rating": 4.9
   },
   {
+    "featured": true,
     "name": "Smart Watch",
     "price": 249.99,
     "company": "InnoTech",
     "rating": 4.5
   },
   {
+    "featured": true,
     "name": "Noise-Canceling Headphones",
     "price": 179.99,
     "company": "GadgetMasters",
     "rating": 4.8
   },
   {
+    "featured": false,
     "name": "Robot Vacuum Cleaner",
     "price": 299.99,
     "company": "SmartHome Appliances",
     "rating": 4.4
   },
   {
+    "featured": false,
     "name": "Foldable Smartphone",
     "price": 1299.99,
     "company": "TechGuru",
     "rating": 4.6
   },
   {
+    "featured": false,
     "name": "Portable Projector",
     "price": 199.99,
     "company": "InnoTech",
     "rating": 4.7
   },
   {
+    "featured": false,
     "name": "Wireless Charging Pad",
     "price": 49.99,
     "company": "GadgetMasters",
     "rating": 4.2
   },
   {
+    "featured": true,
     "name": "Smart Mirror",
     "price": 349.99,
     "company": "SmartHome Appliances",
     "rating": 4.9
   },
   {
+    "featured": true,
     "name": "Augmented Reality Headset",
     "price": 1599.99,
     "company": "TechGuru",
     "rating": 4.5
   },
   {
+    "featured": false,
     "name": "Convertible Laptop",
     "price": 1299.99,
     "company": "InnoTech",
     "rating": 4.6
   },
   {
+    "featured": true,
     "name": "Wireless Gaming Mouse",
     "price": 79.99,
     "company": "GadgetMasters",
